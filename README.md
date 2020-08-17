@@ -42,7 +42,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+Closure is when we can access higher level variables/functions.  We can declare a variable in a function, then put that into another function, then we can access that same variable in our new function.  
 2. Study the following code, then answer the questions below.
+
 
 ```js
 function personalDice(name){
@@ -63,8 +65,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
-b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+The return function is nested in the personalDice function.  The variables within the return function are now accessible to the head function because it's nested within it.  
+b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change? 
+The first and second time "Dan rolled a" is always the same and will never change.  The # value will always be a random number between 0-6 because of the math object. The amount of times the console prints the result also changes depending on how many console.log statements I decide to put on the file.  
 c. What is the lexical scope of `newRoll`? 
+The lexical scope of the newRoll is anything within the return function.
 
 ### Task 2c - Exit Ticket
 
